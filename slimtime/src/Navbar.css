@@ -1,32 +1,33 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
     position: sticky;
     top: 0;
     z-index: 999;
   }
   
   .navbar-container {
+    background-image: url('./img/bgImg.png');
+    background-size:100%;
+    background-position-y: -150px;
+    background-color: rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
-    max-width: 1500px;
+    width: 1920px;
+    height: 650px;
+    
   }
   
   .navbar-logo {
-    color: #fff;
     justify-self: start;
     margin-left: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
+    margin-bottom: 10px;
     display: flex;
-    align-items: center;
+    width: 163.044px;
+    height: 40px;
   }
   
   .fa-typo3 {
@@ -36,13 +37,13 @@
   
   .nav-menu {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 25px;
     list-style: none;
     text-align: center;
-    width: 60vw;
-    justify-content: end;
-    margin-right: 2rem;
+    width: 50vw;
+    justify-content:end;
+    margin-right: 5rem;
   }
   
   .nav-item {
@@ -50,21 +51,27 @@
   }
   
   .nav-links {
-    color: #fff;
+    color: #333333;
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 3.3rem 1rem;
     height: 100%;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5
   }
   
   .nav-links:hover {
-    border-bottom: 4px solid #fff;
-    transition: all 0.2s ease-out;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-out;
   }
   
   .fa-bars {
-    color: #fff;
+    color: #333333;
   }
   
   .nav-links-mobile {
@@ -75,6 +82,23 @@
     display: none;
   }
   
+  /* 기본 버튼 스타일 */
+.btn--inline {
+  display: inline-block;
+  padding: 10px 20px; /* 적절한 패딩 값으로 조절 */
+  border: 1px solid #333333; /* 테두리 색상과 두께 조절 */
+  color: #333333; /* 텍스트 색상 조절 */
+  text-decoration: none; /* 텍스트에 밑줄 제거 */
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+/* hover 시 테두리 안의 배경색이 파란색으로 채워지는 스타일 */
+.btn--inline:hover {
+  border-color: #007bff; /* hover 시 테두리 색상 변경 */
+  background-color: #007bff; /* hover 시 테두리 안의 배경색 변경 */
+  color: #ffffff; /* hover 시 텍스트 색상 변경 */
+}
+
   @media screen and (max-width: 960px) {
     .NavbarItems {
       position: relative;
@@ -93,7 +117,7 @@
     }
   
     .nav-menu.active {
-      background: #242222;
+      background: #5D9EFF;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -108,7 +132,6 @@
     }
   
     .nav-links:hover {
-      background-color: #fff;
       color: #242424;
       border-radius: 0;
     }
@@ -131,7 +154,7 @@
     }
   
     .fa-times {
-      color: #fff;
+      color: #FFFFFF;
       font-size: 2rem;
     }
   
@@ -143,15 +166,14 @@
       width: 80%;
       text-decoration: none;
       font-size: 1.5rem;
-      background-color: transparent;
-      color: #fff;
+      color: #333333;
       padding: 14px 20px;
-      border: 1px solid #fff;
-      transition: all 0.3s ease-out;
+      border: 1px solid #333333;
+      
     }
   
     .nav-links-mobile:hover {
-      background: #fff;
+      background-color: transparent;
       color: #242424;
       transition: 250ms;
     }
