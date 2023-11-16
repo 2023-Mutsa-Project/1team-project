@@ -1,14 +1,25 @@
 import React from 'react';
 import './App.css';
-import Navbar from'./Navbar';
-import {BrowserRouter as Router} from 'react-router-dom';
+import "./index.css";
+import Main from './Main';
+import Search from './Search';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+
 
 function App() {
   return (
     <>
-    <Router>
-      <Navbar />
-    </Router>
+      <Router>
+        <Routes>
+        <Route path="/" element={<Main/>}/>
+        <Route path="/search" element={<Search/>}/>
+        </Routes>
+      </Router>
     </>
   );
 }

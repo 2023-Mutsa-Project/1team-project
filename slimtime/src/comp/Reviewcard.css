@@ -1,0 +1,30 @@
+.card-container{
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 5px 20px 3px rgba(153, 153, 153, 0.25);
+}
+
+.desc{
+    display: flex;
+    width: auto;
+    height: 22px;
+}
+
+.productName{
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.brandName{
+    color: #999;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 32px;
+}

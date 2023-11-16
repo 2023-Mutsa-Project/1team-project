@@ -9,15 +9,11 @@
   }
   
   .navbar-container {
-    background-image: url('./img/bgImg.png');
-    background-size:100%;
-    background-position-y: -150px;
-    background-color: rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 1920px;
-    height: 650px;
+    
     
   }
   

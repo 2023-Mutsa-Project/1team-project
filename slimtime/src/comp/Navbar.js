@@ -1,8 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import {Button} from './Button';
-import logoImage from "./img/logo.png";
-import './Navbar.css';
+import logoImage from "../img/logo.png";
+import './Navbar.css'
 
 
 function Navbar() {
