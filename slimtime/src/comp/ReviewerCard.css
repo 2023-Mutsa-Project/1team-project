@@ -1,0 +1,76 @@
+.reviewercard{
+    display:flex;
+}
+.show-btn{
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.custom-line {
+    border: 1px solid rgba(154, 191, 246, 0.20);; 
+    margin-top: 5px;
+    width: 90%;
+  }
+  
+
+.review-info{
+    align-items: flex-start;
+}
+
+
+.count-review{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top:10px;
+}
+
+.count-like{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top:10px;
+}
+
+.review-section{
+    display: flex;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 20px;;
+    color: #666666;
+}
+
+.reviewnum{
+    padding: 7px;
+    color: #666666;
+}
+
+.like-section{
+    display: flex;
+    gap: 5px;
+    border-radius: 20px;;
+    color: #666666;
+    padding: 5px;
+}
+
+.likenum{
+    padding: 5px;
+    color: #666666;
+}

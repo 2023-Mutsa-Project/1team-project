@@ -8,6 +8,8 @@ import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import bannerImg from './img/banner1.png'
 import reviewtitleImg from './img/reviewtitle.png'
+import ReviewerCard from'./comp/ReviewerCard';
+
 function Search() {
     return (
       <div className="container">
@@ -89,6 +91,11 @@ function Main() {
         </div>
         <div className='topreviewers-container'>
             <img src={reviewtitleImg} alt="topreviewers" className='reviewtitleImg'/>
+            <div className="reviewercards">
+                <ReviewerCard/>
+                <ReviewerCard/>
+                <ReviewerCard/>
+            </div>
         </div>
     </div>
   );
