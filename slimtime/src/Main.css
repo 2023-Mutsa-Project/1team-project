@@ -91,3 +91,79 @@
     align-items: center;
     margin-top: 20px;
   }
+
+.ad-container{
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-top: 200px;
+    display: flex;
+    gap: 10px;
+}
+
+.challenge-container{
+    border-radius: 20px;
+    width: 340px;
+    height: 400px;
+    flex-shrink: 0;
+    background: var(--main, #5D9EFF);
+}
+
+.challenge-section{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 15px;
+}
+
+.challengetitle{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200%;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.challenge-detail{
+    display: inline-flex;
+    padding: 15px;
+    gap: 200px;
+    margin-top: 90px;
+}
+
+.count{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    gap: 5px;
+}
+
+.arrow{
+    color: #FFF;
+}
+
+.oliveyoung-txt{
+    width: 770px;
+    height: 80px;
+    margin-top: 8px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #8CD6FF;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}

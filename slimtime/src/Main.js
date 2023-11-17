@@ -4,8 +4,10 @@ import Navbar from'./comp/Navbar';
 import ReviewCard from'./comp/Reviewcard';
 import './Main.css';
 import subtitleImg from './img/mainsubtitle.png'
-
-
+import PermIdentityIcon from '@mui/icons-material/PermIdentity';
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+import bannerImg from './img/banner1.png'
+import reviewtitleImg from './img/reviewtitle.png'
 function Search() {
     return (
       <div className="container">
@@ -53,6 +55,40 @@ function Main() {
                 <ReviewCard/>
                 <ReviewCard/>
             </div>
+        </div>
+        <div className="ad-container">
+            <div className='challenge-container'>
+                <div className='challenge-section'>
+                    <p>🔥인기 Diet 챌린지방</p>
+                </div>
+                <div className="challengetitle">
+                    <p>매일 1,000kcal 태우기 챌린지</p>
+                </div>
+                <div className='challenge-detail'>
+                    <div className="count">
+                        <PermIdentityIcon></PermIdentityIcon>
+                        <p> 100명</p>
+                    </div>
+                    <div className="arrow">
+                        <KeyboardDoubleArrowRightIcon></KeyboardDoubleArrowRightIcon>
+                    </div>
+                </div>
+            </div>
+            <div className='oliveyoung-container'>
+                <img
+                width='770'
+                height='310'
+                src={bannerImg}
+                alt="ad"
+                />
+                <div className="oliveyoung-txt">
+                    <p>올리브영 블랙프라이데이 50% 세일</p>
+                    <KeyboardDoubleArrowRightIcon></KeyboardDoubleArrowRightIcon>
+                </div>
+            </div>
+        </div>
+        <div className='topreviewers-container'>
+            <img src={reviewtitleImg} alt="topreviewers" className='reviewtitleImg'/>
         </div>
     </div>
   );
