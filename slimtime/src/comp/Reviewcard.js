@@ -15,17 +15,17 @@ import './Reviewcard.css';
 export default function ReviewCard() {
 
   return (
-    <Card className="card-container" sx={{ maxWidth: 300 }}>
-      <CardMedia
-        component="img"
-        height="350"
-        image={ProductImg}
-        alt="Paella dish"
-      />
+    <Card className="card-container" style={{ boxShadow: '0px 3px 20px 5px rgba(153, 153, 153, 0.25)', borderRadius: '10px', overflow: 'hidden' }}> 
+            <CardMedia
+                component="img"
+                height="250"
+                image={ProductImg}
+                alt="Paella dish"
+            />
       <CardContent>
         <div className="desc">
             <div className="productName">
-                <p>grn+ 벨리곰X슬림밸런스 분홍이/초록이 35일분 택 1</p>
+                <p>분홍이/초록이 35일분 택 1</p>
             </div>
             <div className="brandName">
                 <p>GRN+</p>
@@ -33,31 +33,31 @@ export default function ReviewCard() {
         </div>
             <div className="review">
                 <div className="rate">
-                    <StarIcon />
+                    <StarIcon style={{ color: 'red' }} />
                     <p>4.21</p>
                 </div>
                 <div className="reviewcount">
                     <p>리뷰</p>
-                    <p color="light-grey">268건</p>
+                    <p style={{ color: '#999999' }}>268건</p>
                 </div>
-                <div className="hashtag">
-                    <p>가르시니아</p>
-                    <p>체지방 감소</p>
-                    <p>노화 억제</p>
+            </div>
+            <div className="detail">
+                <div className="hashtag-container">
+                    <div className="hashtag1">
+                        <p style={{ color: '#999999' }}>#가르시니아</p>
+                    </div>
+                    <div className="hashtag1">
+                        <p style={{ color: '#999999' }}>#체지방 감소</p>
+                    </div>
+                    <div className="hashtag1">
+                        <p style={{ color: '#999999' }}>#노화 억제</p>
+                    </div>
                 </div>
                 <div className="price">
                     <p>36,000원</p>
                 </div>
             </div>
       </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-      </CardActions>
     </Card>
   );
 }
