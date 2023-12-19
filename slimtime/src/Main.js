@@ -93,8 +93,6 @@ function Main() {
             <img src={reviewtitleImg} alt="topreviewers" className='reviewtitleImg'/>
             <div className="reviewercards">
                 <ReviewerCard/>
-                <ReviewerCard/>
-                <ReviewerCard/>
             </div>
         </div>
     </div>

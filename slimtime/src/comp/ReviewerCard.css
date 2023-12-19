@@ -1,76 +1,145 @@
-.reviewercard{
-    display:flex;
-}
-.show-btn{
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-
-.custom-line {
-    border: 1px solid rgba(154, 191, 246, 0.20);; 
-    margin-top: 5px;
-    width: 90%;
+.user-container {
+    width: 1120px;
+    height: 505px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+    font-family: 'Inter';
   }
   
-
-.review-info{
-    align-items: flex-start;
+.profile-container{
+    display: flex;
+    width: 400px;
+    height: 505px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px 0px 0px 20px;
+    background: rgba(159, 193, 243, 0.10);
 }
 
+.profile-section img {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
 
-.count-review{
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 10px;
-    font-family: Inter;
-    font-size: 16px;
+.profile-section p{
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
-    margin-top:10px;
+    line-height: 30px;
+}
+
+.Line1 {
+    border: 1px solid rgba(154, 191, 246, 0.20);; 
+    margin-top: 20px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+  }
+
+.profiledescription-container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+
+}
+
+.reviewinfo{
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+
+}
+.count-review{
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  border: 1px #5D9EFF solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:12px;
+  gap: 10px;
+}
+
+.likeinfo{
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
 }
 
 .count-like{
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    border: 1px #5D9EFF solid;
     display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-top:10px;
-}
-
-.review-section{
-    display: flex;
-    padding: 7px;
     justify-content: center;
     align-items: center;
+    font-size:12px;
     gap: 10px;
-    flex-shrink: 0;
-    border-radius: 20px;;
-    color: #666666;
-}
+  }
 
-.reviewnum{
-    padding: 7px;
-    color: #666666;
-}
-
-.like-section{
+.detail-btn{
+    margin-top: 50px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    background: #9ABFF6;
+    color: white;
+    font-weight: 700;
+    flex-direction: column;
+    align-items: center;
     display: flex;
-    gap: 5px;
-    border-radius: 20px;;
-    color: #666666;
-    padding: 5px;
+    font-size:14px;
 }
 
-.likenum{
-    padding: 5px;
-    color: #666666;
+.detail-btn:hover{
+    background-color: #2779bd; 
+    border-color: #2779bd;
 }
+
+
+.detailinfo-container {
+    width: 720px;
+    height: 505px;
+    margin-top: 70px;
+  
+}
+.dietchallenge-container {
+    display: flex;
+    margin-left: 5%;
+    font-size: 18px;
+}
+
+.challengedetail-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profilereview-container{
+    margin-top: 20px;
+}
+
+.reviewtext-container{
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.reviewtext {
+    text-align: left; 
+    line-height: 2; 
+    margin-bottom: 10px; 
+  }
+  
+.dietchallenge-container p{
+    font-size: 16px;
+    border-bottom: 1px solid #999999;
+  }

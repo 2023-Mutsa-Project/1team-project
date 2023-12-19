@@ -1,83 +1,84 @@
 import * as React from 'react';
-import AspectRatio from '@mui/joy/AspectRatio';
-import Button from '@mui/joy/Button';
-import Card from '@mui/joy/Card';
-import CardActions from '@mui/joy/CardActions';
-import CardOverflow from '@mui/joy/CardOverflow';
-import Typography from '@mui/material/Typography';
-import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
-import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
-import Profile from '../img/profileimg.png';
-import './ReviewerCard.css'
+import '@mui/material/styles';
+import Card from '@mui/material/Card';
+import profileImg from '../img/profileimg.png';
+import ChallengeInfocard from './Challengeinfo.js'
+import './ReviewerCard.css';
+import product2 from '../img/product2.png'
 
 export default function ReviewerCard() {
+  const textStyle1 = {
+    color: '#000000', 
+  };
+
+  const textStyle2 = {
+    color: '#666666',
+  };
+
+  const textStyle3 = {
+    color: '#5D9EFF',
+  };
+
   return (
-    <Card className="reviewercard"
-      sx={{
-        textAlign: 'center',
-        alignItems: 'center',
-        width: 343,
-        boxShadow: '0px 3px 20px 5px rgba(153, 153, 153, 0.25)', borderRadius: '10px', 
-        overflow: 'hidden',
-        '--icon-size': '100px',
-      }}
-    >
-      <CardOverflow variant="solid" color="#5D9EFF">
-      <AspectRatio
-          variant="outlined"
-          ratio="1"
-          sx={{
-            m: 'auto',
-            transform: 'translateY(50%)',
-            borderRadius: '50%',
-            width: 'var(--icon-size)',
-            boxShadow: 'sm',
-            position: 'relative',
-          }}
-        >
-          <div>
-            <img src={Profile}></img>
+    <Card className="user-container" style={{ boxShadow: '0px 3px 20px 5px rgba(153, 153, 153, 0.25)', borderRadius: '20px', overflow: 'hidden' }}> 
+        <div className="profile-container">
+            <div className="profile-section">
+              <img src={profileImg} width="120px" height="120px" alt="profile"/>
+              <p style={textStyle1}>유지어터 장인</p>
+              <p style={textStyle2}>32,000P</p>
+              <div className="Line1"></div>
+            </div>        
+            <div className="profiledescription-container">
+              <div className='reviewinfo'>
+                <div className="count-review">
+                    <p style={textStyle3}>작성 리뷰 수</p>
+                </div>
+                <div className="count-info">
+                    <p style={textStyle2}>130건</p>
+                </div>
+              </div>
+              <div className='likeinfo'>
+                <div className="count-like">
+                    <p style={textStyle3}>누적 좋아요 수</p>
+                </div>
+                <div className="count-info">
+                    <p style={textStyle2}>180개</p>
+                </div>
+              </div>
+            </div>
+            <div className="detail-btn">
+              <p>작성 리뷰 보러가기</p>
+            </div>
+        </div>
+        <div className="detailinfo-container">
+          <div className='dietchallenge-container'>
+            <p>참여 중인 다이어트 챌린지 달성 현황 (12월)</p>
           </div>
-        </AspectRatio>
-      </CardOverflow>
-      <Typography level="title-lg" sx={{ mt: 'calc(var(--icon-size) / 2)', fontSize: '1.2rem'}}>
-        유지어터장인 
-    </Typography>
-      <CardActions
-        orientation="vertical"
-        buttonFlex={1}
-        sx={{
-            textAlign: 'center',
-            alignItems: 'center',
-          '--Button-radius': '40px',
-          width: 'clamp(min(100%, 160px), 50%, min(100%, 200px))',
-        }}
-      >
-        <Button variant="solid" className="show-btn">
-          작성 리뷰 보러가기
-        </Button>
-      </CardActions>
-      <hr className="custom-line" />
-      <div className="review-info">
-            <div className="count-review">
-                <div className="review-section">
-                    <EditOutlinedIcon/>
-                    <p>총 리뷰 수</p>
-                </div>
-                <div className="reviewnum">
-                    <p>135건</p>
-                </div>
+          <div className='challengedetail-container'>
+            <ChallengeInfocard/>
+            <ChallengeInfocard/>
+            <ChallengeInfocard/>
+          </div>
+          <div className='profilereview-container'>
+            <div className='dietchallenge-container'>
+              <p>최근 작성한 리뷰(12월)</p>
             </div>
-            <div className="count-like">
-                <div className="like-section">
-                    <ThumbUpOutlinedIcon/>
-                    <p>누적 좋아요 수</p>
-                </div>
-            <div className="likenum">
-                <p>135회</p>
-                </div>
+            <div className="reviewsapmle-container">
+            <div className="reviewtext-container">
+              <img src={product2} 
+                height="150"
+                width="130"
+                alt="product"/>
+              <div className="reviewtext">
+                <h3>보조제와 유산소로 한달에 10kg 감량한 썰</h3>
+                <p>핑크포뮬러 핑포워터 다이어트 워터믹스 보조제로 한 달에 10kg 뺐습니다. 
+                물론 운동도 해야하지만 다른 보조제도 많이 써봤었는데 이건 역대급이에요.
+                </p>
+              </div>
+              </div>
             </div>
-       </div>
+          </div>
+        </div>
     </Card>
   );
 }
