@@ -9,6 +9,7 @@ import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArro
 import bannerImg from './img/banner1.png'
 import reviewtitleImg from './img/reviewtitle.png'
 import ReviewerCard from'./comp/ReviewerCard';
+import Footer from'./comp/footer';
 
 function Search() {
     return (
@@ -94,6 +95,9 @@ function Main() {
             <div className="reviewercards">
                 <ReviewerCard/>
             </div>
+        </div>
+        <div className='footer-container'>
+            <Footer/>
         </div>
     </div>
   );

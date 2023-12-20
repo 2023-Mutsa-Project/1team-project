@@ -1,7 +1,6 @@
 "use client";
 import React from 'react';
 import Navbar from'./comp/Navbar';
-import ReviewCard from'./comp/Reviewcard';
 import './Main.css';
 import subtitleImg from './img/mainsubtitle.png'
 
