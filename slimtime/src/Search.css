@@ -1,0 +1,136 @@
+.main-container {
+    background-image: url('./img/bgImg.png');
+    background-size: cover;
+    background-position: center;
+
+    height: 355px; 
+    display: flex;
+    flex-direction: column;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top:75px;
+  }
+  
+  .search-container {
+    width: 80%;
+    max-width: 800px;
+    position: absolute; 
+  }
+  
+  .search-section {
+    display: flex;
+    align-items: center; /* 수직 정렬을 위해 필요할 수 있습니다. */
+  }
+
+  .button {
+    position: relative;
+    margin-left: 10px;
+    background-color: #5D9EFF; 
+    color: #ffffff; 
+    border: 1px solid #5D9EFF; 
+    border-radius: 0.375rem; 
+    font-size: 0.875rem; 
+    padding: 1rem 1rem; 
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: #2779bd; 
+    border-color: #2779bd;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 1rem;
+    padding-left: 3.5rem; 
+    border: #ffffff 1px solid ; 
+    border-radius: 0.375rem; 
+    background-color: #f7fafc; 
+    color: #666666; 
+  }
+
+  .input:hover,
+  input:focus {
+    border-color: #2779bd ; 
+}  
+  
+.data-container{
+    max-width: 1120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center; 
+    margin:0 auto/* 텍스트 가운데 정렬을 위해 추가 */
+  }
+
+  .filter-container{
+    max-width: 1120px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left; 
+    font-size:16px;
+    gap: 15px;
+  }
+
+  .filter-btn{
+    margin-top: 50px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 24px;
+    border: 1.5px solid #5D9EFF;
+    color: #5D9EFF;
+    font-weight: 700;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    font-size:16px;
+}
+
+.filter-btn:hover{
+    background-color: #5D9EFF; 
+    color: white;
+}
+
+.price-container{
+    max-width: 1120px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left; 
+    font-size:18px;
+    gap: 24px;
+  }
+
+.price-btn{
+    max-width: 1120px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left; 
+    font-size:18px;
+    gap: 24px;
+    color: #666666;
+    text-align: center;
+    font-weight: 400;
+}
+
+.price-btn1:hover{
+    color: #333333;
+    font-weight: 700;
+}
+.price-btn2:hover{
+    color: #333333;
+    font-weight: 700;
+}
+.price-btn3:hover{
+    color: #333333;
+    font-weight: 700;
+}
