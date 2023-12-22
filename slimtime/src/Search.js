@@ -4,6 +4,7 @@ import Navbar from'./comp/Navbar';
 import ReviewCard from'./comp/Reviewcard';
 import './Search.css';
 import Footer from'./comp/footer';
+import SearchCard from'./comp/Cardsearch';
 
 function Search() {
     return (
@@ -71,10 +72,19 @@ function Main() {
               </div>
             </div>
             <div className="card-container" style={{ display: 'flex', gap: '45px' }}>
-                
-                <ReviewCard/>
-                <ReviewCard/>
-                <ReviewCard/>
+              <SearchCard/>
+              <SearchCard/>
+              <SearchCard/>
+            </div>
+            <div className="card-container" style={{ display: 'flex', gap: '45px' }}>
+              <SearchCard/>
+              <SearchCard/>
+              <SearchCard/>
+            </div>
+            <div className="card-container" style={{ display: 'flex', gap: '45px' }}>
+              <SearchCard/>
+              <SearchCard/>
+              <SearchCard/>
             </div>
         </div>
         <div className='footer-container'>
