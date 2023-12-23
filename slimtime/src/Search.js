@@ -1,10 +1,10 @@
 "use client";
 import React from 'react';
 import Navbar from'./comp/Navbar';
-import ReviewCard from'./comp/Reviewcard';
 import './Search.css';
 import Footer from'./comp/footer';
 import SearchCard from'./comp/Cardsearch';
+import PaginationRounded from './comp/Pagination';
 
 function Search() {
     return (
@@ -86,6 +86,9 @@ function Main() {
               <SearchCard/>
               <SearchCard/>
             </div>
+        </div>
+        <div className="pagination-container">
+          <PaginationRounded />
         </div>
         <div className='footer-container'>
             <Footer/>
