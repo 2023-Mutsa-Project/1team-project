@@ -4,10 +4,11 @@ import Signbox from "./Signbox";
 import Progressbar from "./Progressbar";
 import { useState } from "react";
 import Mybody from "./Mybody";
-import Home from "../home/Home";
+
 import {  useNavigate } from 'react-router-dom';
 import Myworry from "./Myworry";
 import logoImage from "./logo.png";
+import Complete from "./Complete";
 
 function Sign(){
     const [page,setPage] = useState(1);
@@ -31,6 +32,9 @@ function Sign(){
     const handleLastPrevClick = () => {
         setPage(2);
     };
+    const handleCompletePrevClick = () => {
+        setPage(3);
+    };
     return(
         <div>
             <img className="logoimg" src={logoImage} alt='Logo' />
@@ -39,7 +43,7 @@ function Sign(){
             {page === 1 && <Signbox goNext={handleSignboxSubmit} />}
             {page === 2 && <Mybody  goNext={handleMybodyButtonClick} goPrev={handleMybodyPrevClick}/>}
             {page === 3 && <Myworry  goNext={handleLastButtonClick} goPrev={handleLastPrevClick}/>}
-            {page === 4 &&  navigate("/home")}
+            {page === 4 && <Complete goPrev={handleCompletePrevClick}/>}
         </div>
     );
 }
