@@ -1,0 +1,10 @@
+.main-container {
+    background-image: url('./img/bgImg.png');
+    background-size: cover;
+    background-position: center;
+
+    height: 355px; 
+    display: flex;
+    flex-direction: column;
+  }
+

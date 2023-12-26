@@ -6,10 +6,12 @@ import CardContent from '@mui/material/CardContent';
 import StarIcon from '@mui/icons-material/Star';
 import ProductImg from '../img/product1.png';
 import Box from '@mui/material/Box';
+import { Link } from 'react-router-dom'; 
 import './CardSearch.css';
 
 export default function SearchCard() {
   return (
+    <Link to={`/detail`} className="card-link">
     <Card className="card-container" elevation={0}>
         <Box style={{ boxShadow: '0px 2px 20px 0px rgba(153, 153, 153, 0.25)' }}>{/* 그림자 추가 */}
         <CardMedia
@@ -56,5 +58,6 @@ export default function SearchCard() {
         </div>
       </CardContent>
     </Card>
+  </Link>
   );
 }

@@ -3,6 +3,7 @@ import './App.css';
 import "./index.css";
 import Main from './Main';
 import Search from './Search';
+import DetailSearch from './DetailSearch';
 
 import {
   BrowserRouter as Router,
@@ -18,6 +19,7 @@ function App() {
         <Routes>
         <Route path="/" element={<Main/>}/>
         <Route path="/search" element={<Search/>}/>
+        <Route path="/detail" element={<DetailSearch/>}/>
         </Routes>
       </Router>
     </>
