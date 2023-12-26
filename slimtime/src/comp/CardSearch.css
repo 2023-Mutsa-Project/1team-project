@@ -1,8 +1,0 @@
-.card-link {
-    text-decoration: none; /* Remove underline */
-    transition: transform 0.2s ease-in-out; /* Add transition effect on hover */
-  }
-  
-  .card-link:hover {
-    transform: scale(1.05); 
-  }
