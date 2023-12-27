@@ -1,9 +1,11 @@
 "use strict";
 const express = require("express");
 const bodyParser = require("body-parser");
-//환경변수 설정 .env를 활용하면 어떤 os환경에서 개발해도 동일한 환경변수로 작업할 수 있다.
 const dotenv = require("dotenv");
 dotenv.config();
+const { auth } = require("./middleware/auth");
+const { User } = require("./models/User");
+const port = 5000;
 
 const app = express();
 
@@ -23,4 +25,6 @@ app.use(bodyParser.urlencoded({ extended: true })); //url을 통해 전달되는
 
 app.use("/", home); //use -> 미들웨어를 등록해주는 메서드
 
-module.exports = app;
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`);
+});
