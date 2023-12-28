@@ -1,0 +1,78 @@
+.card-container {
+    max-width: 370px;
+  }
+
+.desc{
+    display: flex;
+    width: auto;
+    height: 22px;
+    
+}
+
+.productName{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.brandName{
+    color: #999;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+
+.review{
+    display: flex;
+    width: auto;
+    margin-top: 20px;
+    height: 22px;
+
+}
+
+.rate {
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+  }
+
+.reviewcount {
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+    margin-left: 20px;
+  }
+
+ .detail{
+    display: flex;
+    gap:30px;
+ } 
+
+  .hashtag-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hashtag1 {
+    display: flex;
+    padding: 4px 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #999;
+    display: inline-flex;
+    font-size: 10px;
+  }
+  
+  
+.price{
+    display: flex;
+    margin-top: 10px;
+}
+  
+
