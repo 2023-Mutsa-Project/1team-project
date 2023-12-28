@@ -1,11 +1,12 @@
-const express = require("express"); // npm install express --save 로 다운받았던 express
-const app = express(); // express app create
-const port = 5000; // back server
+const express = require("express");
+const app = express();
+const port = 5000;
 const bodyParser = require("body-parser");
 const { User } = require("./models/User");
 const cookieParser = require("cookie-parser");
 const config = require("./config/key");
 const { auth } = require("./middleware/auth");
+const searchRouter = require("./routes/search");
 
 // application/x-www-form=urlencoded 형태를 분석해서 가져옴
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -33,6 +34,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/hello", (req, res) => res.send("Hello World!~~ "));
+
+// 라우터 등록
+app.use("/products", searchRouter);
 
 // 회원가입을 위한 router
 app.post("/api/users/register", (req, res) => {
@@ -117,5 +121,5 @@ app.get("/api/users/logout", auth, (req, res) => {
 
 // app 이 5000 서버 연결이 되면 실행하는 코드
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
