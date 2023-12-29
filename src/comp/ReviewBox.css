@@ -1,0 +1,45 @@
+.box-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1500px;
+    height: 242.834px;
+    background: rgba(93, 158, 255, 0.05);
+    flex-shrink: 0;
+    margin: 0 auto;
+    align-items: left;
+    margin-top: 70px;
+    position: relative;
+}
+
+.raterank{
+    width: 190px;
+    height: 215.852px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.80);
+   padding: 20px;
+   align-items: center;
+   line-height: 70px;
+   margin-left: -580px;
+}
+
+.textrank{
+    color: #5D9EFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+
+.ratenum{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 20px;
+}

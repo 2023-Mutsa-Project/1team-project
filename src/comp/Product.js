@@ -3,6 +3,7 @@ import '@mui/material/styles';
 import Card from '@mui/material/Card';
 import StarIcon from '@mui/icons-material/Star';
 import './Product.css';
+import CardContent from '@mui/material/CardContent';
 import productImg from '../img/product3.jpg'
 
 export default function ProductCard() {

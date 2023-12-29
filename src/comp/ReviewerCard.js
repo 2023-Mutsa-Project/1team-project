@@ -2,7 +2,7 @@ import * as React from 'react';
 import '@mui/material/styles';
 import Card from '@mui/material/Card';
 import profileImg from '../img/profileimg.png';
-import ChallengeInfocard from './Challengeinfo.js'
+import ChallengeInfocard from './Challengeinfo.js';
 import './ReviewerCard.css';
 import product2 from '../img/product2.png'
 
