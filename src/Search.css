@@ -15,6 +15,15 @@
   margin-top:75px;
 }
 
+.card-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; /* 원하는 간격으로 조절 */
+  justify-content: space-between; /* 간격을 맞추기 위해 space-between 사용 */
+}
+
+
+
 .search-container {
   width: 80%;
   max-width: 800px;
@@ -143,5 +152,5 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:20px;
+  margin-top:70px;
 }
