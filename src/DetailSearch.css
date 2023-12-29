@@ -1,10 +1,15 @@
-.main-container {
-    background-image: url('./img/bgImg.png');
-    background-size: cover;
-    background-position: center;
+.detail-container {
+  background-image: url('./img/bgImg.png');
+  background-size: cover;
+  background-position: center;
+  height: 550px; 
+  display: flex;
+  flex-direction: column;
+}
 
-    height: 355px; 
-    display: flex;
-    flex-direction: column;
-  }
-
+.customer-rate{
+  display: flex;
+  flex-direction: flex-start;
+  margin-top: 20px;
+  margin-left: -100px;
+}

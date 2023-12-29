@@ -26,8 +26,7 @@
     flex-direction: column;
   }
 
-.container {
-  
+  .container {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -76,32 +75,37 @@
   input:focus {
     border-color: #2779bd ; 
 }  
-  
-.pick-txt{
-  font-family: 'SUITE-Regular';
-    max-width: 1120px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: center; 
-    margin:0 auto/* 텍스트 가운데 정렬을 위해 추가 */
-  }
+
+.pickdesc {
+  max-width: 1120px;
+  display: flex;
+  justify-content: flex-start; /* 왼쪽 정렬 */
+}
+
+.pick-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 왼쪽 정렬 */
+  text-align: center; 
+  margin: 0 auto; /* 중앙 정렬 */
+}
 
 .subtitleImg {
-    max-width: 1120px;
-    width: 200px; 
-    height: auto; 
-    margin-top: 15px;
+  max-width: 1120px;
+  width: 200px; 
+  height: auto; 
+  margin-top: 15px;
 }
 
 .subtxt {
-    color: #666;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 250%;
-    margin-top: 20px;
+  color: #666;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 250%;
+  margin-top: 20px;
+  text-align: left; /* 왼쪽 정렬 추가 */
 }
 
 .card-container {

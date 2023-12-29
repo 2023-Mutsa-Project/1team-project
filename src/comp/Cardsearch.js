@@ -35,7 +35,7 @@ export default function SearchCard() {
             <StarIcon style={{ color: 'red' }} />
             <p>4.21</p>
           </div>
-          <div className="reviewcount">
+          <div className="review-count">
             <p>리뷰</p>
             <p style={{ color: '#999999' }}>268건</p>
           </div>
@@ -53,7 +53,7 @@ export default function SearchCard() {
             </div>
           </div>
           <div className="price">
-            <p>36,000원</p>
+            <p>44,000원</p>
           </div>
         </div>
       </CardContent>

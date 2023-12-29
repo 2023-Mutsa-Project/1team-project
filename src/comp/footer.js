@@ -3,7 +3,6 @@ import * as React from 'react';
 import Box from '@mui/joy/Box';
 import IconButton from '@mui/joy/IconButton';
 import Divider from '@mui/joy/Divider';
-import Input from '@mui/joy/Input';
 import List from '@mui/joy/List';
 import ListSubheader from '@mui/joy/ListSubheader';
 import ListItem from '@mui/joy/ListItem';
@@ -11,7 +10,6 @@ import ListItemButton from '@mui/joy/ListItemButton';
 import Sheet from '@mui/joy/Sheet';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import SendIcon from '@mui/icons-material/Send';
 import InstaIcon from '@mui/icons-material/Instagram';
 
 export default function Footer() {
@@ -40,18 +38,6 @@ export default function Footer() {
         <IconButton variant="plain">
             <InstaIcon sx={{ color: '#999999' }} />
         </IconButton>
-        <Input
-            variant="soft"
-            placeholder="Type in your email"
-            type="email"
-            name="email"
-            endDecorator={
-            <IconButton variant="soft" aria-label="subscribe">
-                <SendIcon sx={{ color: '#999999' }} />
-            </IconButton>
-            }
-            sx={{ ml: 'auto', display: { xs: 'none', md: 'flex' } }}
-        />
         </Box>
       <Divider sx={{ my: 2 }} />
       <Box

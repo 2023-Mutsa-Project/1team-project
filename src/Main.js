@@ -45,20 +45,22 @@ function Main() {
             <Navbar />
             <Search />
         </div>
-        <div className="pick-container">
+        
+          <div className="pickdesc">
             <div className="pick-txt">
-            <img src={subtitleImg} alt="Main Subtitle" className='subtitleImg'/>
+              <img src={subtitleImg} alt="Main Subtitle" className='subtitleImg'/>
             <div className="subtxt">
                 <p>슬림타임이 추천하는 다이어트 보조제 Top 10을 만나보세요. </p>
                 <p>슬림타이머들이 남긴 평점 및 리뷰 기반으로 추천해드립니다.</p>
             </div>
             </div>
+          </div>
             <div className="card-container" style={{ display: 'flex', gap: '45px' }}>
                 <ReviewCard/>
                 <ReviewCard/>
                 <ReviewCard/>
             </div>
-        </div>
+      
         <div className="ad-container">
             <div className='challenge-container'>
                 <div className='challenge-section'>
